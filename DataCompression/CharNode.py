@@ -21,9 +21,9 @@ class CCharNode:
   	self.node_code = 'X'
 
   def printNode(self):
-	print 'CharNode: '
-	print "%(self)s (code: %(code)s) - %(character)s - %(frequency)s" \
-	       %{ "self":hex(id(self)), "code":self.node_code, "character": self.character, "frequency":self.frequency }
-	print "P: %(parent)s - L: %(left_child)s - R: %(right_child)s" \
-	       %{ "parent":hex(id(self.parent)), "left_child":hex(id(self.left_child)), "right_child":hex(id(self.right_child)) }
+	  print 'CharNode: '
+	  print "%(self)s (code: %(code)s) - %(character)s - %(frequency)s" \
+	         %{ "self":hex(id(self)), "code":self.node_code, "character": self.character, "frequency":self.frequency }
+	  print "P: %(parent)s - L: %(left_child)s - R: %(right_child)s" \
+	         %{ "parent":hex(id(self.parent)), "left_child":hex(id(self.left_child)), "right_child":hex(id(self.right_child)) }
 	
