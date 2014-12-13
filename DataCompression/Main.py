@@ -21,7 +21,6 @@ print encoded_str
 
 decoded_str = codec_mgr.decodeString(encoded_str)
 print decoded_str
-
  
 
 
