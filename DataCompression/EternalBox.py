@@ -13,7 +13,7 @@ from CharNode import CCharNode
 class CEternalBox:
   def __init__(self):
   	self.char_node              = CCharNode()
-  	self.decoded_string         = ''
+  	self.decoded_char           = ''
   	self.encoded_sequence       = ''
   	self.encoded_sequence_index = 0
 
