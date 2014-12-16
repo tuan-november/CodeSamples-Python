@@ -1,4 +1,4 @@
-Data Compression - Ruby Code Samples
+Data Compression - Python Code Samples
 
 Written by Tuan Anh Nguyen - Software Engineer 
                              www.MyAIvisions.com 
