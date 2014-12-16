@@ -8,9 +8,6 @@
 #
 # =======================================================================================
 
-def add(a, b):
-	return a + b
-
 class CCharNode:
   def __init__(self):
   	self.character = '*'
@@ -29,5 +26,7 @@ class CCharNode:
 
   def printNodeCompact(self):
     print "(%(code)s)%(character)s - %(self)s - P:%(parent)s" \
-          %{ "code":self.node_code, "character":self.character, "self":hex(id(self)), "parent":hex(id(self.parent))} 
+          %{ "code":self.node_code, "character":self.character, "self":hex(id(self)), "parent":hex(id(self.parent))}
+
+
 	

@@ -17,3 +17,4 @@ class CEternalBox:
   	self.encoded_sequence       = ''
   	self.encoded_sequence_index = 0
 
+

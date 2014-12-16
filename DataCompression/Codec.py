@@ -15,8 +15,7 @@ from EternalBox import CEternalBox
 class CCodec:
   def __init__(self):
     self.__root = CCharNode()
-    # self.__root.printNode()
-
+    
   def encodeString(self, input_str):
     self.__generateCharTree(input_str)
     encoded_str = ''
@@ -39,13 +38,9 @@ class CCodec:
     char_node_queue.append(self.__root)
     
     decoded_string = ''
-    # print "len: ", len(encoded_sequence)
     while(eternal_box.encoded_sequence_index < len(encoded_sequence)):
       self.__decodeChar(self.__root, eternal_box)
-      # print "decoded_char: ", eternal_box.decoded_char
       decoded_string += eternal_box.decoded_char
-      # print "decoded_string: ", decoded_string
-      # print "eternal_box.encoded_sequence_index : ", eternal_box.encoded_sequence_index 
     return decoded_string
 
   def __generateCharHash(self, input_str):
@@ -115,7 +110,6 @@ class CCodec:
 
     char_found = False
     next_node = eternal_box.encoded_sequence[eternal_box.encoded_sequence_index]
-    # print "next_node: ", next_node
     if(next_node == '0' and curr_char_node.left_child != None and not char_found):
       eternal_box.encoded_sequence_index += 1
       char_found = self.__decodeChar(curr_char_node.left_child, eternal_box)
